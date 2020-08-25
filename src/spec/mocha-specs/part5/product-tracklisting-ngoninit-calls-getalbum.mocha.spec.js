@@ -40,7 +40,7 @@ describe('ProductTracklisting', function() {
     } catch (e) {
       assert(false, "ProductTracklistingComponent doesn't exist yet.")
     }
-    let re = /ProductTracklistingComponent\s*implements\s*OnInit\s*\{\s*(\w+)/
+    let re = /ProductTrackListingComponent\s*implements\s*OnInit\s*\{\s*(\w+)/
     let match = file.match(re);
     assert(match[1] == 'albumInfo', "The ProductTracklisting doesn't have a class property named `albumInfo`.")
   });
